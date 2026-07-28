@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '../../../node_modules/@angular/forms/types/forms';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
@@ -7,7 +7,7 @@ import { FormsModule } from '../../../node_modules/@angular/forms/types/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './calculadora.html',
-  styleUrl: './calculadora.css',
+  styleUrl: './calculadora.css'
 })
 
 export class Calculadora {
@@ -17,6 +17,10 @@ export class Calculadora {
   
   resultado = 0;
   
+  somar() {
+    this.resultado = 
+    this.numero1 + this.numero2;
+  }
   
   subtrair(){
     this.resultado =
